@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #durations-line{
+            display: flex;
+            gap: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Калькулятор страхового стажа</h1>
+    </header>
+    <main>
+        <h2>Периоды для расчета</h2>
+        <ol>
+            <li id="duration">
+                <div id="durations-line">
+                    <div>
+                        <label for="start"></label>
+                        <input type="date" id="start" name="duration-start">
+                    </div>
+                    <div>-</div>
+                    <div>
+                        <label for="finish"></label>
+                        <input type="date" id="finish" name="duration-finish">
+                    </div>
+                </div>
+            </li>
+            
+        </ol>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
