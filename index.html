@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <style>
-        #durations-line{
-            display: flex;
-            gap: 10px;
-            margin-left: 10px;
-        }
+      #durations-line {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+      }
+      .new-str {
+        cursor: pointer;
+        margin: 40px;
+      }
+      .new-str:hover {
+        border-bottom: 1px solid black;
+      }
+      .list-item {
+        margin: 10px;
+      }
+      .wrapper{
+          width: 600px;
+          margin: 0 auto;
+          border: solid 2px black;
+          text-align: center;
+      }
+      .left-centred{
+          text-align: left;
+          margin-bottom: 20px;
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Калькулятор страхового стажа</h1>
+      <h1>Калькулятор страхового стажа</h1>
     </header>
     <main>
-        <h2>Периоды для расчета</h2>
-        <ol>
-            <li id="duration">
-                <div id="durations-line">
+      <div class="wrapper">
+          <h2>Периоды для расчета</h2>
+          <div class="left-centred">
+              <ol class="list">
+                <li class="list-item">
+                  <div id="durations-line">
                     <div>
-                        <label for="start"></label>
-                        <input type="date" id="start" name="duration-start">
+                      <label for="start"></label>
+                      <input type="date" id="start-date" name="duration-start" />
                     </div>
                     <div>-</div>
                     <div>
-                        <label for="finish"></label>
-                        <input type="date" id="finish" name="duration-finish">
+                      <label for="finish"></label>
+                      <input type="date" id="finish-date" name="duration-finish" />
                     </div>
-                </div>
-            </li>
-            
-        </ol>
+                  </div>
+                </li>
+              </ol>
+              <span class="new-str">new str +</span>
+          </div>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
